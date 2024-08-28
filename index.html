@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/imgs/Logo.png" alt="logo de alura" class="logo">
+
+    </header>
+    <main>
+        <section>
+            <textarea id="inputTexto" class="text-area" cols="30" rows="10" placeholder="Ingresa el texto aquí..."></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button onclick="encriptar()" class="btn-encriptar">Encriptar</button>
+                <button onclick="desencriptar()" class="btn-desencriptar">Desencriptar</button>
+                
+                
+            </div>
+        </section>
+        <section class="msj-section">
+            <textarea id="outputTexto" class="mensaje" cols="20" rows="10" readonly></textarea>
+            <div>
+                <button class="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Maria 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
